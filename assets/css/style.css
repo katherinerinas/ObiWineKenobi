@@ -1,0 +1,206 @@
+body {
+	background-image: url("http://dashangel.com/wordpress/wp-content/uploads/2015/08/winery_background.jpg");
+	background-size: cover;
+}
+
+.headerRow {
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 25px;
+}
+
+#logoimg {
+	height: 75%;
+	width: 100%;
+	margin-top: 25px;
+}
+
+.jumbotron {
+	background-image: url('../images/barrel.jpg');
+	color: white;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 20px;
+	background-repeat: repeat;
+	background-position: right bottom;
+	background-size: contain;
+	padding-bottom: 1px;
+	padding-top: 10px;
+}
+
+
+.jumbotron h1 {
+	font-family:  Satisfy;
+	font-weight: bold;
+	font-size: 500%;
+	margin-top: 25px;
+	text-shadow: 2px 5px black;
+	padding-top: 50px;
+}
+
+nav {
+	margin-top: 100px;
+	text-align: center;
+}
+
+#userName {
+	text-transform: capitalize;
+}
+
+.nav-link {
+	color: white; 
+}
+
+
+#backgroundwelcome {
+	background-image: url('../images/barrel.jpg');
+}
+
+#wineImage,
+#wineInfo {
+	float: left;
+	margin: 5px;
+}
+
+#additionalInfo {
+	display: block;
+	margin: auto;
+	font-size: 125%;
+}
+
+#wineryInfo {
+	font-size: 125%;
+}
+
+#wineInfo {
+	width: auto;
+	float: left;
+	padding: 5px;
+}
+
+#image {
+	width: 350px;
+	height: 350px;
+}
+
+#searchData,
+#wineInfoPage {
+	margin-top: 20px;
+}
+
+#ageScreen,
+#searchScreen,
+#searchResults,
+#aboutUs,
+#contactForm,
+#searchData,
+#wineInfoPage,
+#favoritesPage {
+	background-color: white;
+	padding: 25px;
+	border-radius: 15px 15px 100px 100px;
+}
+
+#favoritesPageData,
+#aboutBody {
+	background-color: rgba(114, 47, 55, .5)
+}
+
+#searchResults,
+form,
+#middle,
+#main,
+#wineryInfo,
+#wineryDetails {
+	background-color: rgba(236, 205, 19, .35)
+}
+
+#aboutBody,
+form,
+#middle,
+#main,
+#wineryInfo,
+#wineryDetails {
+	margin: 10px;
+	border-radius: 0 0 10px 10px;
+	padding: 10px;
+}
+
+#wineStem {
+	background-color: white;
+	height: 250px;
+	width: 25px;
+}
+
+#wineBase {
+	background-color: white;
+	height: 10px;
+	width: 300px;
+}
+
+#backButton,
+#playButton {
+	float: left;
+}
+
+#favoriteButton {
+	float: right;
+}
+
+#gifDisplay {
+	border-style: solid;
+	float: left;
+}
+
+.wineryItem {
+	margin: 75px;
+}
+
+footer {
+	color: white;
+}
+
+#gifImage {
+	border-radius: 50%;
+}
+
+#modal1 {
+	position:center;
+	text-align:center;
+	background-color:maroon;
+	color:white;
+	height: 80%;
+	width:40%;
+	z-index:100;
+}
+
+#modal2 {
+	display: block;
+	width: 100%;
+	position: center;
+	text-align:center;
+	background-color:maroon;
+	color:white;
+	height: 80%;
+	width:40%;
+	z-index:100;
+}
+
+#yes,
+#no {
+	margin: 5px 15px 15px 5px;
+}
+
+@media screen and (max-width: 1200px) {
+	nav {
+		clear: both;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.jumbotron h1 {
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+}
