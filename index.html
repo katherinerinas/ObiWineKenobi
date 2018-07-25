@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<title>Obi Wine Kenobi</title>
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="icon"  href="https://cdn.iconscout.com/public/images/icon/premium/png-512/wine-glass-cheers-drink-food-date-3dc9933865f330c6-512x512.png">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+<!-- header -->
+	<header class="jumbotron" id="masthead">
+    <div class="container">
+      <div class="row headerRow">
+        <div class="col-md-3 col-xs-3 col-sm-3 col-lg-">
+          <img src="assets/images/ObiWine.png" alt="logo" id="logoimg" class="animated fadeInLeft">
+        </div>
+		    <h1 class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animated fadeInDown">Obi Wine Kenobi</h1>
+
+        <nav class="animated fadeInRight">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><img src="assets/images/wineGlassWhite.png" style="height: 35px;width: 35px;"></a>
+            </li>
+            <li class="nav-item" id="favoritesPageButton">
+              <a class="nav-link" href="index.html"><img src="assets/images/FavoritesWhite.png" style="height: 35px;width: 35px;"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><img src="assets/images/AboutUsInfoWhite.png" style="height: 35px;width: 35px;"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><img src="assets/images/white-business-contact-256.png" style="height: 35px;width: 35px;"></a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+  </header>
+
+  <hr>
+  
+<!--The age confirmation -->
+
+  <div class="container" id="ageScreen">
+
+    <h2 class="text-center">Welcome!  Please enter your details below to access the site</h2>
+
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="nameInput">Your Name:</label>
+              <input type="text" class="form-control" id="nameInput">
+        </div>
+
+        <div class="form-group">
+          <label for="ageInput">Your Age:</label>
+              <input type="number" class="form-control" id="ageInput">
+        </div>
+          <div class="modal-content" id="modal1"></div>
+
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary" id="submitButton">
+              <div class="fa fa-id-card"></div>
+              Submit
+            </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+<!--Search -->
+
+  <div class="container" id="searchScreen">
+
+    <h2 class="text-center">Hello <span id="userName">name</span>! Use the force to search for your wine below:</style></h2>
+
+    <form>
+      <div class="form-group">
+        <label for="nameInput">Enter Wine Name:</label>
+          <input type="text" class="form-control" id="wineSearchInput">
+      </div>
+      <div class="form-group text-center">
+          <button type="submit" class="btn btn-primary" id="searchButton">
+            <div class="fa fa-glass"></div>
+            Search
+          </button>
+      </div>
+    </form>
+
+  </div>
+
+<!--Search Results -->
+
+  <div class="container text-center" id="searchData">
+    <table class="table table-hover">
+
+      <thead>
+        <tr>
+          <th>Wine Image</th>
+          <th>Wine Name</th>
+          <th>Wine Type</th>
+          <th>Vintage</th>
+        </tr>
+      </thead> 
+
+      <tbody id="searchResults">
+
+
+<!--    This is where we will populate the table data from the wine API search
+        <tr>
+          <td>Wine Name</td>
+          <td>
+            <image src="">
+          </td>
+          <th>Wine Type</th>
+          <th>Vintage</th>   
+        </tr> -->
+
+      </tbody>
+      
+    </table>
+  </div>
+
+
+<!-- Wine Detail Page -->
+
+  <div class="container" id="wineInfoPage">
+
+      <div class="row">
+
+        <div class="col-lg-12 col-xs-12 col-md-12 col-xs-12" >
+          <h2 class="text-center">About This Wine</h2>
+        </div>  
+      </div>
+
+      <div class="row">
+          <div class="col-lg-4 col-xs-4 col-md-4 col-xs-4">
+            <button type="submit" class="btn btn-default" id="backButton">
+              <div class="fa fa-undo"></div>
+              Back To Search
+            </button>
+          </div>
+          <br>
+          <div class="col-lg-4 col-xs-4 col-md-4 col-xs-4">
+            <button type="submit" class="btn btn-default" id="playButton" data-state="stopped">
+              <div class="fa fa-assistive-listening-systems"></div>
+              Heard it through the Grapevine
+            </button>
+          </div>
+          <br>
+          <div class="col-lg-4 col-xs-4 col-md-4 col-xs-4">
+            <button type="submit" class="btn btn-default" id="favoriteButton">
+              <div class="fa fa-star"></div>
+              Save this wine as a Favorite
+            </button>
+          </div>
+
+      </div>  
+
+      <hr>
+
+      <div class="row" id="main">
+
+        <div class="col-md-4">
+          <span id="wine-image"></span>
+        </div>
+
+        <div class="col-md-8">
+          <div id="wineInfo">
+            <p>
+              <strong>Name: </strong>
+              <span id="wine-name"></span>
+            </p>
+            <p>
+              <strong>Type: </strong> 
+              <span id="wine-type"></span>
+            </p>
+            <p>
+              <strong>Vintage:</strong>
+              <span id="wine-year"></span> 
+            </p>
+            <p>
+              <strong>Average Price:</strong> 
+              <span id="wine-price"></span>
+            </p>
+            <p>
+              <strong>Region Grown:</strong>
+              <span id="wine-location"></span> 
+            </p>
+            <p>
+              <strong>Description:</strong> 
+              <span id="wine-description"></span>
+            </p>
+          </div>
+
+        </div>  
+
+      </div>
+
+      <hr>
+
+      <div class="row" id="middle">
+        
+        <div id="additionalInfo" class="col-md-6 text-center">
+            <h3>Additional Details</h3>
+            <hr>
+            <p>
+              <strong>Food Pairings:</strong>
+              
+              <p id="food1"></p>
+              <p id="food2"></p>
+              <p id="food3"></p>
+              
+            </p>
+            <hr>
+            <p>
+              <strong>Reviews/Rating:</strong>
+              <span id="wine-review"></span>
+            </p>
+        </div>
+
+      </div>
+      <hr>
+      <div id="wineryDetails">
+        <h3 class="text-center">Winery Details</h3>
+      </div>
+      <div class="row" id="wineryInfo">
+          <p id="winery-image" class="col-md-6"></p>
+            
+        <div class="col-md-6">
+          <p class="wineryItem">
+            <strong>Winery Name:</strong>
+            <span id="winery-name"></span>
+          </p>
+          <p class="wineryItem">
+            <strong>Winery Country:</strong>
+            <span id="winery-country"></span>
+          </p>
+          <p class="wineryItem">
+            <strong>Number of Wines:</strong>
+            <span id="winery-numberWines"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!--Favorites Page-->
+
+<div class="container text-center" id="favoritesPage">
+
+  <div class="panel-heading">
+    <h2 class="panel-title">
+      <span id="userName"></span>
+      Your Favorite Wines
+    </h2>
+  </div>
+
+  <hr>
+  
+  <div class="row">
+    <div class="modal-content text-center col-md-12 col-xs-12 col-sm-12 col-lg-12" id="modal2"></div>
+  </div>
+
+  <table class="table table-hover">
+
+    <thead>
+      <tr>
+        <th>Wine Image</th>
+        <th>Wine Name</th>
+        <th>Wine Type</th>
+        <th>Vintage</th>
+        <th>Remove Favorite</th>
+      </tr>
+    </thead> 
+
+    <tbody id="favoritesPageData">
+
+
+<!--    This is where we will populate the table data from the wine API search
+        <tr>
+          <td>Wine Name</td>
+          <td>
+            <image src="">
+          </td>
+          <th>Wine Type</th>
+          <th>Vintage</th>   
+        </tr> -->
+
+    </tbody>
+      
+  </table>
+</div>
+
+  <div class="container" id="wineStem">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-5">
+        </div>
+      </div>
+  </div>
+  <div class="container" id="wineBase">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+        </div>
+      </div>
+  </div>  
+
+<!-- footer -->
+    <div>
+      <footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center navbar-fixed-bottom" id="footer">Copyright @ 2018 - Obi-Wine Kenobi Group </footer>
+    </div>
+
+
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/ObiWine.js"></script>
+
+</html>
